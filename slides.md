@@ -5,10 +5,7 @@ class: 'text-center'
 transition: slide-left
 highlighter: shiki
 lineNumbers: false
-drawings:
-  persist: false
-mdc: true
-download: true
+baseUrl: '/dopomogai-slides'
 ---
 
 <div class="flex w-full h-full items-center justify-between px-16" @click="!hasPlayedVideo && $event.target.tagName !== 'VIDEO' && playVideo()">
