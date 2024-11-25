@@ -1,4 +1,4 @@
-ame: Deploy pages
+name: Deploy pages
 on: push
 jobs:
   deploy:
