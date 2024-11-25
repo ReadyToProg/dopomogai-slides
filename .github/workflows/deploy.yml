@@ -1,0 +1,26 @@
+name: Deploy pages
+
+on: 
+  push:
+    branches: [main] # або master, залежно від вашої основної гілки
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3 # Оновлено до v3
+      - uses: actions/setup-node@v3 # Оновлено до v3
+        with:
+          node-version: '18' # Оновлено до Node.js 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build -- --base /dopomogai-slides/ # Додаємо базовий шлях
+
+      - name: Deploy pages
+        uses: peaceiris/actions-gh-pages@v3 # Використовуємо більш популярний action
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist 
