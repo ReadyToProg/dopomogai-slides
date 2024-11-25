@@ -1,0 +1,39 @@
+<svg height="40" viewBox="0 0 210 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hubGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#9333EA" />
+    </linearGradient>
+    <radialGradient id="hubDotGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED">
+        <animate 
+          attributeName="stop-color" 
+          values="#7C3AED;#6D28D9;#7C3AED"
+          dur="2s"
+          repeatCount="indefinite"
+        />
+      </stop>
+      <stop offset="100%" stop-color="#6D28D9">
+        <animate 
+          attributeName="stop-color" 
+          values="#6D28D9;#7C3AED;#6D28D9"
+          dur="2s"
+          repeatCount="indefinite"
+        />
+      </stop>
+    </radialGradient>
+  </defs>
+  
+  <!-- Dot -->
+  <circle cx="27" cy="19" r="7" fill="url(#hubGradient)"/>
+  
+  <!-- dopomoga -->
+  <text x="36" y="26" font-family="Arial" font-weight="900" font-size="24" fill="currentColor">
+    dopomoga
+  </text>
+  
+  <!-- hub -->
+  <text x="159" y="26" font-family="Arial" font-weight="900" font-size="24" fill="url(#hubGradient)">
+    hub
+  </text>
+</svg>

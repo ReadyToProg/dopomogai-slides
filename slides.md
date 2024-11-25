@@ -208,27 +208,27 @@ background: '#000'
 
 ---
 layout: default
-background: '#000'
+background: '#fff'
 ---
 
-<div class="flex h-full bg-black text-white px-16 py-8">
+<div class="flex h-full bg-green-300 text-white px-16 py-8">
   <!-- Заголовок -->
   <div class="absolute top-8 left-16" v-motion :initial="{ y: -50, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { delay: 200 } }">
-    <h1 class="text-6xl font-black tracking-tight bg-gradient-to-r from-white via-white to-zinc-400 bg-clip-text text-transparent">Meet Your AI Impact Team</h1>
+    <h1 class="text-6xl font-black tracking-tight bg-gradient-to-r from-black via-green to-zinc-400 bg-clip-text text-transparent">Meet Your AI Impact Team</h1>
   </div>
   <div class="flex w-full pt-20">
     <!-- Ліва колонка з Corporin -->
     <div class="w-2/3 pr-3" v-motion :initial="{ x: -50, opacity: 0 }" :enter="{ y: -15, x: 0, opacity: 1, transition: { delay: 400 } }">
-      <div class="bg-zinc-900/50 rounded-3xl p-6 border border-zinc-800 hover:border-indigo-500/50 transition-all">
+      <div class="bg-blue-300 rounded-3xl p-6 border border-zinc-800 hover:border-indigo-500/50 transition-all">
         <!-- Corporin Avatar & Info -->
         <div class="border-2 border-indigo-500 p-4 rounded-3xl">
           <div class="flex items-start gap-8">
-            <div class="w-32 h-32 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 p-[2px] shrink-0 overflow-hidden">
+            <div class="w-32 h-32 rounded-full bg-gradient-to-r from-green-900 to-purple-600 p-[2px] shrink-0 overflow-hidden">
               <img src="/images/corporin.gif" class="w-full h-full rounded-full object-cover" alt="Corporin"/>
             </div>
             <div>
-              <h2 class="text-3xl font-bold bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent mt-6 mb-2">Corporine</h2>
-              <p class="text-xl text-zinc-400">Your Strategic AI Partner</p>
+              <h2 class="text-3xl font-bold bg-gradient-to-r from-green-900 to-purple-900 bg-clip-text text-transparent mt-6 mb-2">Corporine</h2>
+              <p class="text-xl text-green-600">Your Strategic AI Partner</p>
             </div>
           </div>
         </div>
@@ -236,19 +236,19 @@ background: '#000'
         <div class="mt-6 grid grid-cols-2 gap-6">
           <div class="flex items-center gap-4 group">
             <div class="text-3xl group-hover:scale-125 transition-transform">🎯</div>
-            <div class="text-zinc-200">Corporate social strategy optimization</div>
+            <div class="text-black">Corporate social strategy optimization</div>
           </div>
           <div class="flex items-center gap-4 group">
             <div class="text-3xl group-hover:scale-125 transition-transform">📊</div>
-            <div class="text-zinc-200">Smart campaign management</div>
+            <div class="text-black">Smart campaign management</div>
           </div>
           <div class="flex items-center gap-4 group">
             <div class="text-3xl group-hover:scale-125 transition-transform">✍️</div>
-            <div class="text-zinc-200">AI-powered content creation</div>
+            <div class="text-black">AI-powered content creation</div>
           </div>
           <div class="flex items-center gap-4 group">
             <div class="text-3xl group-hover:scale-125 transition-transform">📈</div>
-            <div class="text-zinc-200">Impact analytics with ROI</div>
+            <div class="text-black">Impact analytics with ROI</div>
           </div>
         </div>
       </div>
@@ -257,14 +257,14 @@ background: '#000'
     <div class="w-1/3 pl-8 pt-4">
       <!-- Active Character -->
       <div class="relative mb-4">
-        <div class="flex items-center bg-gradient-to-r from-blue-500/20 to-transparent p-2 rounded-lg border border-blue-500/30" v-motion :initial="{opacity: 0 }" :enter="{ y: -27, opacity: 1, transition: { delay: 200 } }">
+        <div class="flex items-center bg-gradient-to-r from-blue-500 to-transparent p-2 rounded-lg border border-blue-900" v-motion :initial="{opacity: 0 }" :enter="{ y: -27, opacity: 1, transition: { delay: 200 } }">
           <img src="/images/dopomogai.gif" class="w-12 h-12 rounded-full border-2 border-blue-500" alt="DopomogAI"/>
           <div class="ml-3">
             <div class="text-lg font-bold text-blue-200">DopomogAI</div>
-            <div class="text-xs text-blue-400">AI Team Leader</div>
+            <div class="text-xs text-black">AI Team Leader</div>
           </div>
           <div class="ml-auto">
-            <div class="px-2 py-0.5 bg-blue-500/20 rounded-full text-[10px] font-medium text-blue-200">ACTIVE</div>
+            <div class="px-2 py-0.5 bg-green-600 rounded-full text-[10px] font-medium text-blue-200">ACTIVE</div>
           </div>
         </div>
       </div>
@@ -272,16 +272,16 @@ background: '#000'
       <div class="space-y-2" v-motion :initial="{opacity: 0 }" :enter="{ y: -27, opacity: 1, transition: { delay: 200 } }">
         <!-- Donna -->
         <div class="relative group">
-          <div class="flex items-center p-2 rounded bg-zinc-900/50 border border-purple-500/20">
-            <div class="w-8 h-8 rounded-full bg-purple-900/30 flex items-center justify-center">
+          <div class="flex items-center p-2 rounded bg-zinc-400 border border-purple-500/20">
+            <div class="w-8 h-8 rounded-full bg-purple-900 flex items-center justify-center">
               <span class="text-lg opacity-50">🎁</span>
             </div>
             <div class="ml-3 leading-none">
-              <div class="text-sm font-medium text-zinc-400">Donna</div>
-              <div class="text-[10px] text-zinc-500">Donor Guide</div>
+              <div class="text-sm font-medium text-zinc-100">Donna</div>
+              <div class="text-[10px] text-zinc-300">Donor Guide</div>
             </div>
             <div class="ml-auto flex items-center gap-1">
-              <div class="px-1.5 py-0.5 bg-zinc-800 rounded text-[10px] text-zinc-500">LEVEL 1</div>
+              <div class="px-1.5 py-0.5 bg-green-800 rounded text-[10px] text-zinc-500">LEVEL 1</div>
               <span class="text-xs">🔒</span>
             </div>
           </div>
@@ -289,16 +289,16 @@ background: '#000'
         </div>
         <!-- Fundessa -->
         <div class="relative group">
-          <div class="flex items-center p-2 rounded bg-zinc-900/50 border border-blue-500/20">
-            <div class="w-8 h-8 rounded-full bg-blue-900/30 flex items-center justify-center">
+          <div class="flex items-center p-2 rounded bg-zinc-400 border border-blue-500/20">
+            <div class="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center">
               <span class="text-lg opacity-50">💰</span>
             </div>
             <div class="ml-3 leading-none">
-              <div class="text-sm font-medium text-zinc-400">Fundessa</div>
-              <div class="text-[10px] text-zinc-500">Nonprofit Expert</div>
+              <div class="text-sm font-medium text-zinc-100">Fundessa</div>
+              <div class="text-[10px] text-zinc-300">Nonprofit Expert</div>
             </div>
             <div class="ml-auto flex items-center gap-1">
-              <div class="px-1.5 py-0.5 bg-zinc-800 rounded text-[10px] text-zinc-500">LEVEL 2</div>
+              <div class="px-1.5 py-0.5 bg-green-800 rounded text-[10px] text-zinc-500">LEVEL 2</div>
               <span class="text-xs">🔒</span>
             </div>
           </div>
@@ -306,16 +306,16 @@ background: '#000'
         </div>
         <!-- Voluntine -->
         <div class="relative group">
-          <div class="flex items-center p-2 rounded bg-zinc-900/50 border border-green-500/20">
-            <div class="w-8 h-8 rounded-full bg-green-900/30 flex items-center justify-center">
+          <div class="flex items-center p-2 rounded bg-zinc-400 border border-green-500/20">
+            <div class="w-8 h-8 rounded-full bg-green-900 flex items-center justify-center">
               <span class="text-lg opacity-50">🤝</span>
             </div>
             <div class="ml-3 leading-none">
-              <div class="text-sm font-medium text-zinc-400">Voluntine</div>
-              <div class="text-[10px] text-zinc-500">Volunteer Support</div>
+              <div class="text-sm font-medium text-zinc-100">Voluntine</div>
+              <div class="text-[10px] text-zinc-300">Volunteer Support</div>
             </div>
             <div class="ml-auto flex items-center gap-1">
-              <div class="px-1.5 py-0.5 bg-zinc-800 rounded text-[10px] text-zinc-500">LEVEL 3</div>
+              <div class="px-1.5 py-0.5 bg-green-800 rounded text-[10px] text-zinc-500">LEVEL 3</div>
               <span class="text-xs">🔒</span>
             </div>
           </div>
@@ -323,16 +323,16 @@ background: '#000'
         </div>
         <!-- Influerra -->
         <div class="relative group">
-          <div class="flex items-center p-2 rounded bg-zinc-900/50 border border-pink-500/20">
-            <div class="w-8 h-8 rounded-full bg-pink-900/30 flex items-center justify-center">
+          <div class="flex items-center p-2 rounded bg-zinc-400 border border-pink-500/20">
+            <div class="w-8 h-8 rounded-full bg-pink-900 flex items-center justify-center">
               <span class="text-lg opacity-50">🎭</span>
             </div>
             <div class="ml-3 leading-none">
-              <div class="text-sm font-medium text-zinc-400">Influerra</div>
-              <div class="text-[10px] text-zinc-500">Influencer's Partner</div>
+              <div class="text-sm font-medium text-zinc-100">Influerra</div>
+              <div class="text-[10px] text-zinc-300">Influencer's Partner</div>
             </div>
             <div class="ml-auto flex items-center gap-1">
-              <div class="px-1.5 py-0.5 bg-zinc-800 rounded text-[10px] text-zinc-500">LEVEL 4</div>
+              <div class="px-1.5 py-0.5 bg-green-800 rounded text-[10px] text-zinc-500">LEVEL 4</div>
               <span class="text-xs">🔒</span>
             </div>
           </div>
@@ -340,16 +340,16 @@ background: '#000'
         </div>
         <!-- Activat -->
         <div class="relative group">
-          <div class="flex items-center p-2 rounded bg-zinc-900/50 border border-orange-500/20">
-            <div class="w-8 h-8 rounded-full bg-orange-900/30 flex items-center justify-center">
+          <div class="flex items-center p-2 rounded bg-zinc-400 border border-orange-500/20">
+            <div class="w-8 h-8 rounded-full bg-orange-900 flex items-center justify-center">
               <span class="text-lg opacity-50">🎯</span>
             </div>
             <div class="ml-3 leading-none">
-              <div class="text-sm font-medium text-zinc-400">Activat</div>
-              <div class="text-[10px] text-zinc-500">Mission Creator</div>
+              <div class="text-sm font-medium text-zinc-100">Activat</div>
+              <div class="text-[10px] text-zinc-300">Mission Creator</div>
             </div>
             <div class="ml-auto flex items-center gap-1">
-              <div class="px-1.5 py-0.5 bg-zinc-800 rounded text-[10px] text-zinc-500">LEVEL 5</div>
+              <div class="px-1.5 py-0.5 bg-green-800 rounded text-[10px] text-zinc-500">LEVEL 5</div>
               <span class="text-xs">🔒</span>
             </div>
           </div>
@@ -360,9 +360,9 @@ background: '#000'
   </div>
   <!-- Features Footer -->
   <div class="absolute bottom-8 left-8 right-8" v-motion :initial="{ y: 50, opacity: 0 }" :enter="{ y: 30, opacity: 1, transition: { delay: 800 } }">
-    <div class="bg-zinc-900/80 rounded-2xl p-2.1 border border-zinc-800">
+    <div class="bg-blue-300 rounded-2xl p-2.1 border border-zinc-800">
       <div class="flex items-center justify-between">
-        <div class="text-sm text-zinc-500">Each Agent's Superpower</div>
+        <div class="text-sm text-black-500">Each Agent's Superpower</div>
         <div class="flex gap-4">
           <div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-zinc-800/50">
             <span class="text-xl">🧠</span>
@@ -381,7 +381,7 @@ background: '#000'
             <span class="text-sm text-zinc-300">24/7 Optimization</span>
           </div>
         </div>
-        <div class="pl-3 text-sm text-zinc-500">& work together</div>
+        <div class="pl-3 text-sm text-black-500">& work together</div>
       </div>
     </div>
   </div>
@@ -390,24 +390,24 @@ background: '#000'
 
 <style>
 .slidev-layout {
-  @apply bg-black;
+  @apply bg-white;
   padding: 0;
 }
 
 .slidev-layout.default {
-  background: black !important;
+  background: white !important;
   margin: 0 !important;
   padding: 0 !important;
 }
 
 #slide-content {
-  background: black !important;
+  background: white !important;
 }
 
 .slidev-page, 
 .slidev-layout .slidev-page,
 .slidev-layout.default .slidev-page {
-  background: black !important;
+  background: white !important;
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -436,81 +436,80 @@ background: '#000'
 
 ---
 layout: default
-background: '#000'
+background: '#fff'
 ---
-
-<div class="flex flex-row h-full bg-black text-white px-16 py-12">
+<div class="flex flex-row h-full bg-sky-50 text-gray-800 px-16 py-12">
   <!-- Ліва колонка (2/3) -->
   <div class="w-2/3 pr-12">
     <!-- Заголовок -->
     <div class="mb-8" v-motion :initial="{ y: -50, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { delay: 200 } }">
-      <h1 class="text-6xl font-black tracking-tight bg-gradient-to-r from-white via-white to-zinc-400 bg-clip-text text-transparent mb-2">Transform Giving into Growth</h1>
+      <h1 class="text-6xl font-black tracking-tight bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 bg-clip-text text-transparent mb-2">Transform Giving into Growth</h1>
     </div>
     <!-- Impact Cofounder Card -->
-    <div class="bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-3xl p-8 border border-indigo-500/30" 
+    <div class="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-3xl p-8 border border-blue-200" 
       v-motion :initial="{ x: -50, opacity: 0 }" :enter="{ x: 0, opacity: 1, transition: { delay: 400 } }">
       <div class="flex justify-between items-start mb-6">
         <div>
-          <h2 class="text-3xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">Impact Cofounder</h2>
-          <div class="text-zinc-400 mt-1">Only 3 seats available</div>
+          <h2 class="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Impact Cofounder</h2>
+          <div class="text-gray-600 mt-1">Only 3 seats available</div>
         </div>
         <div class="text-right">
-          <div class="text-3xl font-bold text-white">$4,500<span class="text-lg font-normal">/month</span></div>
-          <div class="text-zinc-400">or $36,000/year (33% off)</div>
+          <div class="text-3xl font-bold text-gray-800">$4,500<span class="text-lg font-normal">/month</span></div>
+          <div class="text-gray-600">or $36,000/year (33% off)</div>
         </div>
       </div>
       <!-- Features Grid -->
       <div class="grid grid-cols-3 gap-6">
         <!-- Dedicated Team -->
         <div class="space-y-3">
-          <h3 class="text-lg font-semibold text-indigo-300">Dedicated Human & AI Team</h3>
-          <div class="space-y-2 text-sm text-zinc-400">
+          <h4 class="text-lg font-bold text-purple-600">Dedicated Human & AI Team</h4>
+          <div class="space-y-2 text-sm text-gray-600">
             <div class="flex items-center gap-2">
-              <span class="text-indigo-500">✓</span>
+              <span class="text-blue-600">✓</span>
               Maximum Impact Visibility
             </div>
             <div class="flex items-center gap-2">
-              <span class="text-indigo-500">✓</span>
+              <span class="text-blue-600">✓</span>
               Featured success stories
             </div>
             <div class="flex items-center gap-2">
-              <span class="text-indigo-500">✓</span>
+              <span class="text-blue-600">✓</span>
               Priority media coverage
             </div>
           </div>
         </div>
         <!-- Strategic Partnership -->
         <div class="space-y-3">
-          <h3 class="text-lg font-semibold text-purple-300">Strategic Partnership</h3>
-          <div class="space-y-2 text-sm text-zinc-400">
+          <h4 class="text-lg font-bold text-indigo-800">Strategic Partnership</h4>
+          <div class="space-y-2 text-sm text-gray-600">
             <div class="flex items-center gap-2">
-              <span class="text-purple-500">✓</span>
+              <span class="text-indigo-600">✓</span>
               Co-founder recognition
             </div>
             <div class="flex items-center gap-2">
-              <span class="text-purple-500">✓</span>
+              <span class="text-indigo-600">✓</span>
               Custom impact programs
             </div>
             <div class="flex items-center gap-2">
-              <span class="text-purple-500">✓</span>
+              <span class="text-indigo-600">✓</span>
               Product development input
             </div>
           </div>
         </div>
         <!-- Business Growth -->
         <div class="space-y-3">
-          <h3 class="text-lg font-semibold text-blue-300">Business Growth</h3>
-          <div class="space-y-2 text-sm text-zinc-400">
+          <h4 class="text-lg font-bold text-sky-800">Business Growth</h4>
+          <div class="space-y-2 text-sm text-gray-600">
             <div class="flex items-center gap-2">
-              <span class="text-blue-500">✓</span>
+              <span class="text-sky-600">✓</span>
               Maximum brand exposure
             </div>
             <div class="flex items-center gap-2">
-              <span class="text-blue-500">✓</span>
+              <span class="text-sky-600">✓</span>
               Network effect benefits
             </div>
             <div class="flex items-center gap-2">
-              <span class="text-blue-500">✓</span>
+              <span class="text-sky-600">✓</span>
               Deep impact analytics
             </div>
           </div>
@@ -518,30 +517,30 @@ background: '#000'
       </div>
     </div>
     <!-- Bottom Banner -->
-    <div class="mt-3 text-center text-m text-zinc-400" v-motion :initial="{ y: 50, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { delay: 800 } }">
+    <div class="mt-3 text-center text-m text-gray-600" v-motion :initial="{ y: 50, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { delay: 800 } }">
       Shape the future of social impact as 1/3 co-founding partners
     </div>
   </div>
   <!-- Права колонка (1/3) -->
   <div class="w-1/3 pl-12 space-y-6" v-motion :initial="{ x: 50, opacity: 0 }" :enter="{ y: -33, x: 0, opacity: 1, transition: { delay: 600 } }">
-    <div class="text-2xl font-bold mb-3">Coming Soon:</div>
+    <div class="text-2xl font-bold mb-3 text-gray-800">Coming Soon:</div>
     <!-- Free Tier -->
-    <div class="bg-zinc-900/50 rounded-xl p-6 border border-zinc-800">
-      <h3 class="text-xl font-bold mb-3">Free Tier</h3>
-      <div class="space-y-2 text-sm text-zinc-400">
+    <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+      <h4 class="text-xl font-bold text-blue-600">Free Tier</h4>
+      <div class="space-y-2 text-sm text-gray-600">
         <div>✓ Public Company Profile</div>
         <div>✓ Basic impact tracking</div>
         <div>✓ Impact Programs access</div>
       </div>
-      <div class="mt-3 text-xs text-zinc-500">Pay for your growth</div>
+      <div class="mt-3 text-xs text-gray-500">Pay for your impact growth</div>
     </div>
     <!-- Impact Partner -->
-    <div class="bg-gradient-to-br from-blue-500/20 to-indigo-500/20 rounded-xl p-6 border border-blue-500/30">
+    <div class="bg-gradient-to-br from-blue-200 to-sky-200 rounded-xl p-6 border border-blue-300 shadow-sm">
       <div class="flex justify-between items-start mb-4">
-        <h3 class="text-xl font-bold">Impact Partner</h3>
-        <div class="text-xl font-bold">$699<span class="text-sm font-normal">/month</span></div>
+        <h4 class="text-xl font-bold text-blue-800">Impact Partner</h4>
+        <div class="text-xl font-bold text-gray-800">$699<span class="text-sm font-normal">/month</span></div>
       </div>
-      <div class="space-y-2 text-sm text-zinc-300">
+      <div class="space-y-2 text-sm text-gray-700">
         <div>✓ Full AI team access</div>
         <div>✓ Smart campaign management</div>
         <div>✓ Automated marketing and Impact storytelling</div>
@@ -567,49 +566,49 @@ background: '#000'
 
 ---
 layout: default
-background: '#000'
+background: '#fff'
 ---
 
-<div class="flex flex-col h-full bg-black text-white px-12 py-8">
+<div class="flex flex-col h-full bg-white text-gray-800 px-12 py-8">
   <!-- Компактний заголовок -->
   <div class="mb-6" v-motion :initial="{ y: -20, opacity: 0 }" :enter="{ y: 0, opacity: 1, transition: { delay: 200 } }">
-    <h1 class="text-4xl font-bold tracking-tight bg-gradient-to-r from-white via-white to-zinc-400 bg-clip-text text-transparent mb-1">New Category - AI-Powered Impact Ecosystem</h1>
-    <div class="text-lg text-blue-400">We aim to become a leader on estimated market of $410.1B CSR software by 2032</div>
+    <h1 class="text-4xl font-bold tracking-tight bg-gradient-to-r from-blue-600 via-blue-800 to-gray-800 bg-clip-text text-transparent mb-1">New Category - AI-Powered Impact Ecosystem</h1>
+    <div class="text-lg text-blue-600">We aim to become a leader on estimated market of $410.1B CSR software by 2032</div>
   </div>
   <div class="flex flex-1 gap-6">
     <!-- Current Solutions -->
     <div class="w-1/2 space-y-3" v-motion :initial="{ x: -20, opacity: 0 }" :enter="{ x: 0, opacity: 1, transition: { delay: 400 } }">
       <!-- Benevity -->
-      <div class="bg-zinc-900/50 rounded-lg p-4 border border-zinc-800">
+      <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm">
         <div class="flex items-center justify-between gap-3 mb-3">
           <img src="/images/benevity.png" class="w-24 h-6 object-contain" alt="Benevity"/>
-          <div class="text-sm font-medium text-zinc-300">CSR Platform</div>
+          <div class="text-sm font-medium text-gray-600">CSR Platform</div>
         </div>
         <div class="grid grid-cols-2 gap-2 text-xs">
           <div class="space-y-1">
-            <div class="flex items-center gap-2 text-zinc-400">
+            <div class="flex items-center gap-2 text-gray-600">
               <span class="text-amber-500">⚠️</span>
               Enterprise-only ($100k+)
             </div>
-            <div class="flex items-center gap-2 text-zinc-400">
+            <div class="flex items-center gap-2 text-gray-600">
               <span class="text-amber-500">⚠️</span>
               Complex implementation
             </div>
-            <div class="flex items-center gap-2 text-zinc-400">
+            <div class="flex items-center gap-2 text-gray-600">
               <span class="text-amber-500">⚠️</span>
               3-4 months donation delays
             </div>
           </div>
           <div class="space-y-1 flex flex-col justify-between h-full text-right">
-            <div class="flex items-center gap-2 text-green-400 justify-end">
+            <div class="flex items-center gap-2 text-green-600 justify-end">
               <span>68.81% market share</span>
               <span>📈</span>
             </div>
-            <div class="flex items-center gap-2 text-green-400 justify-end">
+            <div class="flex items-center gap-2 text-green-600 justify-end">
               <span>$133M revenue</span>
               <span>💰</span>
             </div>
-            <div class="flex items-center gap-2 text-green-400 justify-end">
+            <div class="flex items-center gap-2 text-green-600 justify-end">
               <span>CSR Industry leader</span>
               <span>🏆</span>
             </div>
@@ -617,36 +616,36 @@ background: '#000'
         </div>
       </div>
       <!-- Meta -->
-      <div class="bg-zinc-900/50 rounded-lg p-4 border border-zinc-800">
+      <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm">
         <div class="flex items-center justify-between gap-3 mb-3">
           <img src="/images/meta.svg" class="w-24 h-6 object-contain" alt="Meta"/>
-          <div class="text-sm font-medium text-zinc-300">General Social Media</div>
+          <div class="text-sm font-medium text-gray-600">General Social Media</div>
         </div>
         <div class="grid grid-cols-2 gap-2 text-xs">
           <div class="space-y-1">
-            <div class="flex items-center gap-2 text-zinc-400">
+            <div class="flex items-center gap-2 text-gray-600">
               <span class="text-amber-500">⚠️</span>
               Not specialized for impact
             </div>
-            <div class="flex items-center gap-2 text-zinc-400">
+            <div class="flex items-center gap-2 text-gray-600">
               <span class="text-amber-500">⚠️</span>
               No social impact optimization
             </div>
-            <div class="flex items-center gap-2 text-zinc-400">
+            <div class="flex items-center gap-2 text-gray-600">
               <span class="text-amber-500">⚠️</span>
               High marketing costs
             </div>
           </div>
           <div class="space-y-1 flex flex-col justify-between h-full text-right">
-            <div class="flex items-center gap-2 text-green-400 justify-end">
+            <div class="flex items-center gap-2 text-green-600 justify-end">
               <span>98% NGO presence</span>
               <span>📈</span>
             </div>
-            <div class="flex items-center gap-2 text-green-400 justify-end">
+            <div class="flex items-center gap-2 text-green-600 justify-end">
               <span>$6B ads spend by non-profits</span>
               <span>💰</span>
             </div>
-            <div class="flex items-center gap-2 text-green-400 justify-end">
+            <div class="flex items-center gap-2 text-green-600 justify-end">
               <span>Largest reach</span>
               <span>🌎</span>
             </div>
@@ -654,36 +653,36 @@ background: '#000'
         </div>
       </div>
       <!-- GoFundMe -->
-      <div class="bg-zinc-900/50 rounded-lg p-4 border border-zinc-800">
+      <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm">
         <div class="flex items-center justify-between gap-3 mb-3">
           <img src="/images/gofundme.png" class="w-24 h-6 object-contain" alt="GoFundMe"/>
-          <div class="text-sm font-medium text-zinc-300">Fundraising Platform</div>
+          <div class="text-sm font-medium text-gray-600">Fundraising Platform</div>
         </div>
         <div class="grid grid-cols-2 gap-2 text-xs">
           <div class="space-y-1">
-            <div class="flex items-center gap-2 text-zinc-400">
+            <div class="flex items-center gap-2 text-gray-600">
               <span class="text-amber-500">⚠️</span>
               Limited fundraisers featured
             </div>
-            <div class="flex items-center gap-2 text-zinc-400">
+            <div class="flex items-center gap-2 text-gray-600">
               <span class="text-amber-500">⚠️</span>
               Limited impact tracking
             </div>
-            <div class="flex items-center gap-2 text-zinc-400">
+            <div class="flex items-center gap-2 text-gray-600">
               <span class="text-amber-500">⚠️</span>
               Transaction fees (2.9%)
             </div>
           </div>
           <div class="space-y-1 flex flex-col justify-between h-full text-right">
-            <div class="flex items-center gap-2 text-green-400 justify-end">
+            <div class="flex items-center gap-2 text-green-600 justify-end">
               <span>47% market share</span>
               <span>📈</span>
             </div>
-            <div class="flex items-center gap-2 text-green-400 justify-end">
+            <div class="flex items-center gap-2 text-green-600 justify-end">
               <span>$55M revenue</span>
               <span>💰</span>
             </div>
-            <div class="flex items-center gap-2 text-green-400 justify-end">
+            <div class="flex items-center gap-2 text-green-600 justify-end">
               <span>Fundraising industry leader</span>
               <span>🏆</span>
             </div>
@@ -694,12 +693,12 @@ background: '#000'
     <!-- Our Ecosystem -->
     <div class="w-1/2 space-y-3" v-motion :initial="{ x: 20, opacity: 0 }" :enter="{ x: 0, opacity: 1, transition: { delay: 600 } }">
       <!-- DopomogAI -->
-      <div class="bg-gradient-to-br from-blue-200 to-transparent rounded-lg p-4 border border-blue-500/30">
+      <div class="bg-gradient-to-br from-blue-100 to-white rounded-lg p-4 border border-blue-200 shadow-sm">
         <div class="flex items-center gap-3 mb-1">
           <img src="/images/dopomogai.svg" class="w-50" alt="DopomogAI"/>
-          <div class="text-sm font-medium text-blue-300">Your AI Impact Partner</div>
+          <div class="text-sm font-medium text-blue-600">Your AI Impact Partner</div>
         </div>
-        <div class="grid grid-cols-[1fr] gap-2 text-xs text-zinc-300">
+        <div class="grid grid-cols-[1fr] gap-2 text-xs text-gray-600">
           <div class="space-y-1">
             <div>✅ Start from free tier available for everyone</div>
             <div>✅ AI-Automated implementation & processes</div>
@@ -708,12 +707,12 @@ background: '#000'
         </div>
       </div>
       <!-- DopomogaHub -->
-      <div class="bg-gradient-to-br from-purple-300 to-transparent rounded-lg p-4 border border-purple-500/30">
+      <div class="bg-gradient-to-br from-purple-100 to-white rounded-lg p-4 border border-purple-200 shadow-sm">
         <div class="flex items-center gap-3 mb-1">
           <img src="/images/dopomogahub.svg" class="w-50" alt="DopomogaHub"/>
-          <div class="text-sm font-medium text-purple-300">Impact-First Social Network</div>
+          <div class="text-sm font-medium text-purple-600">Impact-First Social Network</div>
         </div>
-        <div class="grid grid-cols-[1fr] gap-2 text-xs text-zinc-300">
+        <div class="grid grid-cols-[1fr] gap-2 text-xs text-gray-600">
           <div class="space-y-1">
             <div>✅ Specialized impact platform</div>
             <div>✅ Automated impact optimization & tracking</div>
@@ -722,12 +721,12 @@ background: '#000'
         </div>
       </div>
       <!-- Prozbory -->
-      <div class="bg-gradient-to-r from-orange-500/20 to-transparent rounded-lg p-4 border border-orange-500/30">
+      <div class="bg-gradient-to-br from-orange-100 to-white rounded-lg p-4 border border-orange-200 shadow-sm">
         <div class="flex items-center gap-3 mb-1">
           <img src="/images/prozbory1.svg" class="w-50" alt="Prozbory"/>
-          <div class="text-sm font-medium text-orange-300">Smart Giving Platform</div>
+          <div class="text-sm font-medium text-orange-600">Smart Giving Platform</div>
         </div>
-        <div class="grid grid-cols-[1fr] gap-2 text-xs text-zinc-300">
+        <div class="grid grid-cols-[1fr] gap-2 text-xs text-gray-600">
           <div class="space-y-1">
             <div>✅ Fundraisers and non-profits aggregation</div>
             <div>✅ Smart campaign distribution & analytics</div>
@@ -758,94 +757,93 @@ src: ./pages/team.md
 layout: default
 background: '#000'
 ---
-
-<div class="relative h-full bg-black text-white overflow-hidden">
+<div class="relative h-full bg-white text-gray-800 overflow-hidden">
   <!-- Фоновий градієнт -->
-  <div class="absolute inset-0 bg-gradient-radial from-blue-500/10 via-transparent to-transparent"/>
+  <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-transparent"/>
   
   <!-- Основний контент -->
   <div class="relative h-full flex flex-col px-24 py-1">
     <!-- Заголовок -->
     <div class="mb-16" v-motion :initial="{ y: -20, opacity: 0 }" :enter="{ y: 0, opacity: 1 }">
       <h1 class="text-[8rem] font-black leading-none tracking-tight">
-        <span class="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Ready for Global Impact</span>
+        <span class="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mt-1.5">Ready for Global Impact</span>
       </h1>
     </div>
     <!-- Сітка -->
     <div class="grid grid-cols-12 gap-8 flex-1">
       <!-- Why Now -->
       <div class="col-span-4 space-y-6" v-motion :initial="{ x: -40, opacity: 0 }" :enter="{y:-30, x: 0, opacity: 1, delay: 200 }">
-        <div class="text-xs font-medium tracking-widest text-blue-400 uppercase">Why Now</div>
+        <div class="text-xs font-medium tracking-widest text-blue-600 uppercase">Why Now</div>
         <div class="space-y-6">
           <div class="group">
             <div class="text-5xl mb-3 opacity-40 group-hover:opacity-100 transition-opacity">🚀</div>
-            <div class="text-xl font-medium text-white/80">Working MVP</div>
-            <div class="text-white/40">Prozbory & DopomogAI live</div>
+            <div class="text-xl font-medium text-gray-800">Working MVP</div>
+            <div class="text-gray-600">Prozbory & DopomogAI live</div>
           </div>
           <div class="group">
             <div class="text-5xl mb-3 opacity-40 group-hover:opacity-100 transition-opacity">📈</div>
-            <div class="text-xl font-medium text-white/80">Proven Demand</div>
-            <div class="text-white/40">Growing user traction</div>
+            <div class="text-xl font-medium text-gray-800">Proven Demand</div>
+            <div class="text-gray-600">Growing user traction</div>
           </div>
           <div class="group">
             <div class="text-5xl mb-3 opacity-40 group-hover:opacity-100 transition-opacity">⚡️</div>
-            <div class="text-xl font-medium text-white/80">Tech Ready</div>
-            <div class="text-white/40">AI & blockchain maturity</div>
+            <div class="text-xl font-medium text-gray-800">Tech Ready</div>
+            <div class="text-gray-600">AI & blockchain maturity</div>
           </div>
         </div>
       </div>
       <!-- What We Need -->
       <div class="col-span-4 space-y-6" v-motion :initial="{ y: 40, opacity: 0 }" :enter="{ y: -30, opacity: 1, delay: 400 }">
-        <div class="text-xs font-medium tracking-widest text-purple-400 uppercase">What We Need</div>
+        <div class="text-xs font-medium tracking-widest text-purple-600 uppercase">What We Need</div>
         <div class="space-y-8">
           <div class="relative group">
             <div class="absolute -inset-1 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg blur opacity-0 group-hover:opacity-20 transition duration-1000"></div>
-            <div class="relative p-6 bg-white/5 rounded-lg">
-              <div class="text-xl font-medium text-white/80">Technical Expertise</div>
-              <div class="text-white/40 mt-2">AI development insights</div>
+            <div class="relative p-6 bg-white/90 rounded-lg shadow-sm">
+              <div class="text-xl font-medium text-gray-800">Technical Expertise</div>
+              <div class="text-gray-600 mt-2">AI development insights</div>
             </div>
           </div>
           <div class="relative group">
             <div class="absolute -inset-1 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg blur opacity-0 group-hover:opacity-20 transition duration-1000"></div>
-            <div class="relative p-6 bg-white/5 rounded-lg">
-              <div class="text-xl font-medium text-white/80">Network Access</div>
-              <div class="text-white/40 mt-2">Strategic partnership</div>
+            <div class="relative p-6 bg-white/90 rounded-lg shadow-sm">
+              <div class="text-xl font-medium text-gray-800">Network Access</div>
+              <div class="text-gray-600 mt-2">Strategic partnership</div>
             </div>
           </div>
           <div class="relative group">
             <div class="absolute -inset-1 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg blur opacity-0 group-hover:opacity-20 transition duration-1000"></div>
-            <div class="relative p-6 bg-white/5 rounded-lg">
-              <div class="text-xl font-medium text-white/80">Investment Ready</div>
-              <div class="text-white/40 mt-2">Preparation for funding</div>
+            <div class="relative p-6 bg-white/90 rounded-lg shadow-sm">
+              <div class="text-xl font-medium text-gray-800">Investment Ready</div>
+              <div class="text-gray-600 mt-2">Preparation for funding</div>
             </div>
           </div>
         </div>
       </div>
       <!-- Together We Can -->
       <div class="col-span-4 flex flex-col" v-motion :initial="{ x: 40, opacity: 0 }" :enter="{ y:-30, x: 0, opacity: 1, delay: 600 }">
-        <div class="text-xs font-medium tracking-widest text-blue-400 uppercase mb-6">Together We Can</div>
+        <div class="text-xs font-medium tracking-widest text-blue-600 uppercase mb-6">Together We Can</div>
         <div class="flex-1 relative">
-          <div class="absolute inset-0 bg-white/5 rounded-2xl overflow-hidden">
+          <div class="absolute inset-0 bg-white/90 rounded-2xl shadow-sm overflow-hidden">
             <div class="h-full flex flex-col justify-between p-6">
               <div class="space-y-6">
-                <div class="flex items-center gap-4 text-white/60 hover:text-white/90 transition-colors">
+                <div class="flex items-center gap-4 text-gray-600 hover:text-gray-800 transition-colors">
                   <span class="text-4xl">🎯</span>
                   <span class="text-xl">Perfect AI capabilities</span>
                 </div>
-                <div class="flex items-center gap-4 text-white/60 hover:text-white/90 transition-colors">
+                <div class="flex items-center gap-4 text-gray-600 hover:text-gray-800 transition-colors">
                   <span class="text-4xl">🇺🇦</span>
                   <span class="text-xl">Scale nationally</span>
                 </div>
-                <div class="flex items-center gap-4 text-white/60 hover:text-white/90 transition-colors">
+                <div class="flex items-center gap-4 text-gray-600 hover:text-gray-800 transition-colors">
                   <span class="text-4xl">🇪🇺</span>
                   <span class="text-xl">Enter EU market</span>
                 </div>
-                <div class="flex items-center gap-4 text-white/60 hover:text-white/90 transition-colors">
+                <div class="flex items-center gap-4 text-gray-600 hover:text-gray-800 transition-colors">
                   <span class="text-4xl">🌍</span>
                   <span class="text-xl">Transform giving globally</span>
                 </div>
               </div>
-              <div class="text-sm text-white/40 italic">The future of social impact</div>
+              <div class="text-sm text-gray-500 italic">The future of social impact</div>
             </div>
           </div>
         </div>
@@ -854,13 +852,13 @@ background: '#000'
   </div>
 
   <!-- Декоративні елементи -->
-  <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"/>
-  <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl"/>
+  <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"/>
+  <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-32 h-32 bg-blue-100/50 rounded-full blur-3xl"/>
 </div>
 
 <style>
 .slidev-layout {
-  @apply bg-black;
+  @apply bg-white;
   padding: 0;
 }
 </style>
