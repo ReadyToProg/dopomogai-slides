@@ -1,7 +1,6 @@
 <template>
   <div class="relative group cursor-pointer">
     <video 
-      :src="greetingsVideo"
       ref="video"
       class="w-full rounded-xl" 
       playsinline
@@ -24,7 +23,6 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import greetingsVideo from '../public/images/greetings.mp4'
 
 const props = defineProps({
   videoSrc: {
