@@ -1,0 +1,17 @@
+<svg width="300" height="40" viewBox="0 0 270 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hubGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#FBBF24" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Dot -->
+  <circle cx="27" cy="19" r="5" fill="url(#hubGradient)" />
+  <circle cx="27" cy="19" r="8" fill="none" stroke="url(#hubGradient)" stroke-width="2" />
+
+  <!-- hub -->
+  <text x="37" y="26" font-family="Arial" font-weight="900" font-size="24" fill="url(#hubGradient)">
+    prozbory
+  </text>
+</svg>
