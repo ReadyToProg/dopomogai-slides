@@ -6,6 +6,7 @@ transition: slide-left
 highlighter: shiki
 lineNumbers: false
 baseUrl: '/dopomogai-slides'
+base: '/dopomogai-slides'
 ---
 
 <div class="flex w-full h-full items-center justify-between px-16" @click="!hasPlayedVideo && $event.target.tagName !== 'VIDEO' && playVideo()">

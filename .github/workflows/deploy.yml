@@ -15,7 +15,9 @@ jobs:
       - name: Install for PDF
         run: npm i -D playwright-chromium
       - name: Build
-        run: slidev build --base /dopomogai-slides/ 
+        run: |
+          npm run build -- --base /dopomogai-slides/
+          touch dist/.nojekyll
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2
         with:

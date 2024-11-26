@@ -8,11 +8,8 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.50.0-beta.6",
-    "@slidev/theme-apple-basic": "^0.25.1",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest",
-    "vue": "^3.5.12"
+    "@slidev/cli": "^0.50.0",
+    "@slidev/theme-apple-basic": "*"
   },
   "devDependencies": {
     "playwright-chromium": "^1.49.0"
