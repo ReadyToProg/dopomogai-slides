@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/',
+  base: '/dopomogai-slides/',
   assetsInclude: ['**/*.jpg', '**/*.png', '**/*.gif', '**/*.mp4', '**/*.svg'],
   build: {
     assetsDir: 'assets',
