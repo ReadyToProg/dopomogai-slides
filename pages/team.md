@@ -14,7 +14,7 @@ background: '#fff'
   <!-- Andrew CEO -->
   <div class="absolute" style="left: 100px; top: 100px;">
     <div class="flex items-start gap-8">
-      <img src="../public/images/Andrew.jpg" class="w-32 h-32 rounded-full object-cover ring-2 ring-green-500/30" alt="Andrew" />
+      <img src="/images/Andrew.jpg" class="w-32 h-32 rounded-full object-cover ring-2 ring-green-500/30" alt="Andrew" />
       <div class="space-y-2">
         <div class="text-2xl font-bold text-green-600">Andrew</div>
         <div class="flex items-center gap-2 text-lg text-gray-700">
