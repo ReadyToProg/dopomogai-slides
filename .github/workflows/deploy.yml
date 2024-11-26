@@ -1,3 +1,4 @@
+
 name: Deploy pages
 on: push
 jobs:
@@ -10,14 +11,8 @@ jobs:
           node-version: '14'
       - name: Install dependencies
         run: npm install
-      - name: Install slidev
-        run:  npm i -g @slidev/cli
-      - name: Install for PDF
-        run: npm i -D playwright-chromium
       - name: Build
-        run: |
-          npm run build -- --base /dopomogai-slides/
-          touch dist/.nojekyll
+        run: npm run build
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
