@@ -1,0 +1,1 @@
+import{m as t,q as o,M as s}from"../vendor-Db8_RCGK.js";import{_ as r}from"../index-DTw3kyuO.js";const c={},a={class:"slidev-layout default"};function n(e,l){return t(),o("div",a,[s(e.$slots,"default")])}const f=r(c,[["render",n]]);export{f as I};
