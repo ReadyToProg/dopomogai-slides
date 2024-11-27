@@ -48,16 +48,13 @@ base: '/'
     <div class="relative">
       <div class="absolute -inset-4 bg-gradient-to-r from-indigo-500/20 via-blue-500/20 to-transparent rounded-[2rem] blur-xl"/>
       <div class="relative">
-        <div style="position:relative; width:100%; height:0px; padding-bottom:108.611%" class="rounded-2xl overflow-hidden border border-zinc-800/50">
-          <iframe 
-            allow="fullscreen;autoplay" 
-            allowfullscreen 
-            height="100%" 
-            src="https://streamable.com/e/lo5rv6?&nocontrols=1" 
-            width="100%" 
-            style="border:none; width:100%; height:99%; position:absolute; left:0px; top:0px; overflow:hidden;"
-          ></iframe>
-        </div>
+        <iframe
+          src="https://streamable.com/e/lo5rv6?&nocontrols=1"
+          frameborder="0" 
+          allowfullscreen
+          class="w-[90%] h-[90%] rounded-2xl overflow-hidden border border-zinc-800/50 mx-auto"
+          style="aspect-ratio: 11/12;"
+        ></iframe>
       </div>
     </div>
   </div>
