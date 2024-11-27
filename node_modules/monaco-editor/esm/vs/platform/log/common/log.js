@@ -69,6 +69,16 @@ export class ConsoleLogger extends AbstractLogger {
             }
         }
     }
+    warn(message, ...args) {
+        if (this.checkLogLevel(LogLevel.Warning)) {
+            if (this.useColors) {
+                console.log('%c WARN', 'color: #993', message, ...args);
+            }
+            else {
+                console.log(message, ...args);
+            }
+        }
+    }
     error(message, ...args) {
         if (this.checkLogLevel(LogLevel.Error)) {
             if (this.useColors) {
@@ -78,9 +88,6 @@ export class ConsoleLogger extends AbstractLogger {
                 console.error(message, ...args);
             }
         }
-    }
-    dispose() {
-        // noop
     }
 }
 export class MultiplexLogger extends AbstractLogger {
@@ -112,6 +119,11 @@ export class MultiplexLogger extends AbstractLogger {
             logger.info(message, ...args);
         }
     }
+    warn(message, ...args) {
+        for (const logger of this.loggers) {
+            logger.warn(message, ...args);
+        }
+    }
     error(message, ...args) {
         for (const logger of this.loggers) {
             logger.error(message, ...args);
@@ -121,6 +133,7 @@ export class MultiplexLogger extends AbstractLogger {
         for (const logger of this.loggers) {
             logger.dispose();
         }
+        super.dispose();
     }
 }
 export function LogLevelToString(logLevel) {

@@ -14,13 +14,14 @@ export var OverviewRulerLane;
     OverviewRulerLane[OverviewRulerLane["Full"] = 7] = "Full";
 })(OverviewRulerLane || (OverviewRulerLane = {}));
 /**
- * Position in the minimap to render the decoration.
+ * Vertical Lane in the glyph margin of the editor.
  */
-export var MinimapPosition;
-(function (MinimapPosition) {
-    MinimapPosition[MinimapPosition["Inline"] = 1] = "Inline";
-    MinimapPosition[MinimapPosition["Gutter"] = 2] = "Gutter";
-})(MinimapPosition || (MinimapPosition = {}));
+export var GlyphMarginLane;
+(function (GlyphMarginLane) {
+    GlyphMarginLane[GlyphMarginLane["Left"] = 1] = "Left";
+    GlyphMarginLane[GlyphMarginLane["Center"] = 2] = "Center";
+    GlyphMarginLane[GlyphMarginLane["Right"] = 3] = "Right";
+})(GlyphMarginLane || (GlyphMarginLane = {}));
 export var InjectedTextCursorStops;
 (function (InjectedTextCursorStops) {
     InjectedTextCursorStops[InjectedTextCursorStops["Both"] = 0] = "Both";

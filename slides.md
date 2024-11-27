@@ -5,7 +5,6 @@ class: 'text-center'
 transition: slide-left
 highlighter: shiki
 lineNumbers: false
-baseUrl: '/dopomogai-slides'
 base: '/dopomogai-slides'
 ---
 

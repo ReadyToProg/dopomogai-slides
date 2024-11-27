@@ -2,12 +2,21 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   base: '/dopomogai-slides/',
-  assetsInclude: ['**/*.jpg', '**/*.png', '**/*.gif', '**/*.mp4', '**/*.svg'],
+  optimizeDeps: {
+    include: [
+      'vue',
+      '@vueuse/core',
+      '@vueuse/motion'
+    ],
+    exclude: ['vue-demi']
+  },
   build: {
-    assetsDir: 'assets',
     rollupOptions: {
+      external: [],
       output: {
-        assetFileNames: 'assets/[name].[hash][extname]'
+        manualChunks: {
+          'vue-vendor': ['vue']
+        }
       }
     }
   }

@@ -1,5 +1,5 @@
 {
-  "name": "dopomogai-slides",
+  "name": "dopomogai",
   "type": "module",
   "private": true,
   "scripts": {
@@ -8,12 +8,13 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "0.48.0-beta.5",
-    "@slidev/theme-apple-basic": "latest",
+    "@slidev/cli": "^0.50.0-beta.6",
+    "@slidev/theme-apple-basic": "^0.25.1",
     "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest"
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.5.12"
   },
   "devDependencies": {
-    "playwright-chromium": "^1.39.0"
+    "playwright-chromium": "^1.49.0"
   }
 }
