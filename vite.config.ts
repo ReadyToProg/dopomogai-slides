@@ -1,10 +1,9 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/dopomogai-slides/',
+  base: '/',
   optimizeDeps: {
     include: [
-      'vue',
       '@vueuse/core',
       '@vueuse/motion'
     ],
@@ -12,10 +11,9 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: [],
       output: {
         manualChunks: {
-          'vue-vendor': ['vue']
+          'vendor': ['vue', '@vueuse/core', '@vueuse/motion']
         }
       }
     }
