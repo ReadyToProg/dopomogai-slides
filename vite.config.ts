@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/',
+  base: '/dopomogai-slides/',
   optimizeDeps: {
     include: [
       '@vueuse/core',
