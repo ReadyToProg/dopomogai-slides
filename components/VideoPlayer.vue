@@ -5,10 +5,9 @@
       class="w-full rounded-xl" 
       playsinline
       @ended="handleVideoEnd"
-      :src="videoUrl"
-      preload="metadata"
-      controls
-    ></video>
+    >
+      <source :src="videoSrc" type="video/mp4">
+    </video>
     
     <div 
       v-if="!isPlaying"
@@ -23,7 +22,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, computed } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const props = defineProps({
   videoSrc: {
@@ -37,29 +36,6 @@ const emit = defineEmits(['videoPlayed'])
 const video = ref(null)
 const isPlaying = ref(false)
 const hasBeenPlayed = ref(false)
-
-const videoUrl = computed(() => {
-  // Перевіряємо чи це пряме посилання на відео файл
-  if (props.videoSrc.match(/\.(mp4|webm|ogg)$/i)) {
-    return props.videoSrc
-  }
-  
-  // Якщо це YouTube
-  if (props.videoSrc.includes('youtube.com') || props.videoSrc.includes('youtu.be')) {
-    const videoId = props.videoSrc.split('v=')[1] || props.videoSrc.split('/').pop()
-    // Використовуємо проксі-сервіс або API для отримання прямого посилання
-    return `https://your-proxy-service.com/youtube/${videoId}`
-  }
-  
-  // Якщо це Vimeo
-  if (props.videoSrc.includes('vimeo.com')) {
-    const videoId = props.videoSrc.split('/').pop()
-    // Використовуємо Vimeo API для отримання прямого посилання
-    return `https://your-proxy-service.com/vimeo/${videoId}`
-  }
-  
-  return props.videoSrc
-})
 
 const playVideo = () => {
   if (video.value) {
@@ -83,4 +59,4 @@ onMounted(() => {
     })
   }
 })
-</script>
+</script> 
