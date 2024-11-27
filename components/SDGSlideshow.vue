@@ -10,23 +10,23 @@ interface Goal {
 }
 
 const goals: Goal[] = [
-  { id: 1, title: "Подолання бідності", icon: "components/SDGsImages/E_GIF_01.gif", staticIcon: "components/SDGsImages/E_WEB_01.png", color: "#E5243B" },
-  { id: 2, title: "Подолання голоду", icon: "components/SDGsImages/E_GIF_02.gif", staticIcon: "components/SDGsImages/E_WEB_02.png", color: "#DDA63A" },
-  { id: 3, title: "Міцне здоров'я", icon: "components/SDGsImages/E_GIF_03.gif", staticIcon: "components/SDGsImages/E_WEB_03.png", color: "#4C9F38" },
-  { id: 4, title: "Якісна освіта", icon: "components/SDGsImages/E_GIF_04.gif", staticIcon: "components/SDGsImages/E_WEB_04.png", color: "#C5192D" },
-  { id: 5, title: "Гендерна рівність", icon: "components/SDGsImages/E_GIF_05.gif", staticIcon: "components/SDGsImages/E_WEB_05.png", color: "#FF3A21" },
-  { id: 6, title: "Чиста вода", icon: "components/SDGsImages/E_GIF_06.gif", staticIcon: "components/SDGsImages/E_WEB_06.png", color: "#26BDE2" },
-  { id: 7, title: "Відновлювана енергія", icon: "components/SDGsImages/E_GIF_07.gif", staticIcon: "components/SDGsImages/E_WEB_07.png", color: "#FCC30B" },
-  { id: 8, title: "Гідна праця", icon: "components/SDGsImages/E_GIF_08.gif", staticIcon: "components/SDGsImages/E_WEB_08.png", color: "#A21942" },
-  { id: 9, title: "Інновації", icon: "components/SDGsImages/E_GIF_09.gif", staticIcon: "components/SDGsImages/E_WEB_09.png", color: "#FD6925" },
-  { id: 10, title: "Скорочення нерівності", icon: "components/SDGsImages/E_GIF_10.gif", staticIcon: "components/SDGsImages/E_WEB_10.png", color: "#DD1367" },
-  { id: 11, title: "Сталі міста", icon: "components/SDGsImages/E_GIF_11.gif", staticIcon: "components/SDGsImages/E_WEB_11.png", color: "#FD9D24" },
-  { id: 12, title: "Відповідальне споживання", icon: "components/SDGsImages/E_GIF_12.gif", staticIcon: "components/SDGsImages/E_WEB_12.png", color: "#BF8B2E" },
-  { id: 13, title: "Боротьба зі зміною клімату", icon: "components/SDGsImages/E_GIF_13.gif", staticIcon: "components/SDGsImages/E_WEB_13.png", color: "#3F7E44" },
-  { id: 14, title: "Збереження морських екосистем", icon: "components/SDGsImages/E_GIF_14.gif", staticIcon: "components/SDGsImages/E_WEB_14.png", color: "#0A97D9" },
-  { id: 15, title: "Збереження екосистем суші", icon: "components/SDGsImages/E_GIF_15.gif", staticIcon: "components/SDGsImages/E_WEB_15.png", color: "#56C02B" },
-  { id: 16, title: "Мир та справедливість", icon: "components/SDGsImages/E_GIF_16.gif", staticIcon: "components/SDGsImages/E_WEB_16.png", color: "#00689D" },
-  { id: 17, title: "Партнерство", icon: "components/SDGsImages/E_GIF_17.gif", staticIcon: "components/SDGsImages/E_WEB_17.png", color: "#19486A" }
+  { id: 1, title: "Подолання бідності", icon: "/E_GIF_01.gif", staticIcon: "/E_WEB_01.png", color: "#E5243B" },
+  { id: 2, title: "Подолання голоду", icon: "/E_GIF_02.gif", staticIcon: "/E_WEB_02.png", color: "#DDA63A" },
+  { id: 3, title: "Міцне здоров'я", icon: "/E_GIF_03.gif", staticIcon: "/E_WEB_03.png", color: "#4C9F38" },
+  { id: 4, title: "Якісна освіта", icon: "/E_GIF_04.gif", staticIcon: "/E_WEB_04.png", color: "#C5192D" },
+  { id: 5, title: "Гендерна рівність", icon: "/E_GIF_05.gif", staticIcon: "/E_WEB_05.png", color: "#FF3A21" },
+  { id: 6, title: "Чиста вода", icon: "/E_GIF_06.gif", staticIcon: "/E_WEB_06.png", color: "#26BDE2" },
+  { id: 7, title: "Відновлювана енергія", icon: "/E_GIF_07.gif", staticIcon: "/E_WEB_07.png", color: "#FCC30B" },
+  { id: 8, title: "Гідна праця", icon: "/E_GIF_08.gif", staticIcon: "/E_WEB_08.png", color: "#A21942" },
+  { id: 9, title: "Інновації", icon: "/E_GIF_09.gif", staticIcon: "/E_WEB_09.png", color: "#FD6925" },
+  { id: 10, title: "Скорочення нерівності", icon: "/E_GIF_10.gif", staticIcon: "/E_WEB_10.png", color: "#DD1367" },
+  { id: 11, title: "Сталі міста", icon: "/E_GIF_11.gif", staticIcon: "/E_WEB_11.png", color: "#FD9D24" },
+  { id: 12, title: "Відповідальне споживання", icon: "/E_GIF_12.gif", staticIcon: "/E_WEB_12.png", color: "#BF8B2E" },
+  { id: 13, title: "Боротьба зі зміною клімату", icon: "/E_GIF_13.gif", staticIcon: "/E_WEB_13.png", color: "#3F7E44" },
+  { id: 14, title: "Збереження морських екосистем", icon: "/E_GIF_14.gif", staticIcon: "/E_WEB_14.png", color: "#0A97D9" },
+  { id: 15, title: "Збереження екосистем суші", icon: "/E_GIF_15.gif", staticIcon: "/E_WEB_15.png", color: "#56C02B" },
+  { id: 16, title: "Мир та справедливість", icon: "/E_GIF_16.gif", staticIcon: "/E_WEB_16.png", color: "#00689D" },
+  { id: 17, title: "Партнерство", icon: "/E_GIF_17.gif", staticIcon: "/E_WEB_17.png", color: "#19486A" }
 ]
 
 const currentIndex = ref(0)
